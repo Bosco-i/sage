@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" name="viewport"
+content= "width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https:
+//cdnjs.cloudflare.com/ajax/libs
+/font-awesome/4.7.0/css/font-
+awesome.min.css">
+<title>DATA VENDOR</title>
+<style type="text/css">
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;}
+
+body {
+background:rgba(0,0,255,0.1);
+width:100%;
+height:100%;
+color:#32527b;}
+
+.header{
+background:white;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+position:fixed;
+width:100%;
+height:60px;
+justify-content:;
+display:flex;
+align-items:center;}
+.header>h1{
+line-height:1;
+font-weight:900;
+font-size:20px;}
+.header>a{
+color:grey;
+font-size:40px;
+font-weight:400;}
+
+nav>a{
+color:grey;
+font-size:20px;
+line-height:1.5;
+height:22px;
+width:50px;
+
+align-items:center;
+padding:0px 4px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+nav{
+margin-left:90px;}
+.welcome{
+text-align:center;
+margin-bottom:60px;
+}
+.welcome>h1{
+margin-top:
+font-weight:800;
+font-size:18px;
+margin-bottom:10px;
+line-height:11;}
+.welcome>h5{
+margin-bottom:10px;
+margin-top:-70px;
+font-weight:600;
+font-size:13px;}
+.welcome>p{
+font-size:11px;
+margin-bottom:25px;
+}
+.welcome>a{
+text-decoration:none;
+border-radius:4px;
+color:white;
+background:#32527b;
+padding:6px 8px;
+}
+
+.logo-content {
+background:white;
+height:120px;
+width:250px;
+margin-left:35px;
+margin-bottom:25px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+border-radius:8px;
+}
+
+
+.logo-content >.text{
+font-size:12px;
+margin-left:80px;
+margin-top:55px;
+position:absolute;
+color:black;
+font-weight:400;
+}
+.logo-content >i{
+font-size:30px;
+display:flex;
+margin-left:20px;
+margin-top:50px;
+position:absolute;
+}
+.logo-content >h{
+margin-top:15px;
+position:absolute;
+padding-left:30px;
+font-size:12px;
+font-weight:800;}
+.logo-content >.bx-user-plus,
+.bx-credit-card-alt,.bx-cycling{
+background:#D5C4A1;
+padding:6px 6px;
+border-radius:50%;
+border:2px dotted #32527b ;}
+
+{
+display:flex;
+align-items:center;}
+
+.Why>h3{
+text-align:center;
+margin-top:10px;
+margin-bottom:50px;
+font-size:30px;
+font-weight:800;
+}
+
+.automated{
+background:white;
+height:180px;
+width:250px;
+margin-left:35px;
+margin-bottom:25px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-align:center;
+border-radius:8px;
+}
+.automated>h,.support>h{
+line-height:2;
+margin-bottom:10px;
+font-weight:800;}
+.automated >p,.support>p{
+font-size:12px;
+color:black;}
+.discount>p{
+font-size:12px;
+color:white;}
+
+.discount{
+background:#32527b;
+height:180px;
+width:250px;
+margin-left:35px;
+margin-bottom:50px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-align:center;
+border-radius:8px;
+}
+
+.support{
+background:white;
+height:180px;
+width:250px;
+margin-left:35px;
+margin-bottom:25px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-align:center;
+border-radius:8px;}
+.service{
+text-align:center;}
+.service>h{
+font-size:30px;
+font-weight:800;
+line-height:2;
+}
+.service>p{
+margin-bottom:30px;
+font-size:15px;
+font-weight:500;
+color:black;}
+
+
+.airtime,.data,.exam,.electricity,.cable{
+background:white;
+height:180px;
+width:250px;
+margin-left:35px;
+margin-bottom:25px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-align:center;
+border-radius:8px;
+}
+
+
+.airtime>h{
+background:rgba(0,255,0,0.1);
+color:green;
+font-size:12px;
+padding:2px 4px;
+cursor:pointer;
+border-radius:25px;
+}
+.airtime>a{
+text-decoration:none;
+color:black;
+line-height:3;}
+.data>h{
+background:rgba(0,255,0,0.1);
+color:green;
+font-size:12px;
+padding:2px 4px;
+border-radius:25px;
+cursor:pointer;
+}
+.data>a{
+text-decoration:none;
+color:black;
+line-height:3;}
+.electricity>h{
+background:rgba(0,255,0,0.1);
+color:green;
+font-size:12px;
+padding:2px 4px;
+border-radius:25px;
+cursor:pointer;
+}
+.electricity>a{
+text-decoration:none;
+color:black;
+line-height:3;}
+
+.cable>h{
+background:rgba(0,255,0,0.1);
+color:green;
+font-size:12px;
+padding:2px 4px;
+cursor:pointer;
+border-radius:25px;
+}
+.cable>a{
+text-decoration:none;
+color:black;
+line-height:3;}
+
+.exam>h{
+background:rgba(0,255,0,0.1);
+color:green;
+font-size:12px;
+padding:2px 4px;
+border-radius:25px;
+cursor:pointer;
+}
+.exam>a{
+text-decoration:none;
+color:black;
+line-height:3;}
+.bx-support,.bx-band-aid{
+font-size:30px;
+margin-top:20px;
+border:6px solid rgba(0,255,0,0.1);
+background:#32527b;
+border-radius:50%;
+padding:4px 6px;
+color:white;}
+
+
+.bx-git-merge{
+font-size:30px;
+margin-top:20px;
+border:6px solid rgba(0,255,0,0.1);
+background:white;
+border-radius:50%;
+padding:4px 6px;
+color:#32537b;
+margin-bottom:20px;}
+.price{
+text-align:center;}
+.price>h{
+font-size:30px;
+font-weight:800;
+line-height:2;}
+.price>p{
+font-size:12px;
+font-weight:400;
+color:black;
+margin-bottom:20px;}
+
+.mtn{
+background:white;
+height:280px;
+width:250px;
+margin-left:35px;
+margin-bottom:25px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+border-radius:8px;
+}
+.mtn>h{
+font-weight:800;
+font-size:15px;
+line-height:2;}
+.mtn>h3{
+font-weight:800;
+font-size:30px;
+margin-bottom:8px;
+}
+.mtn>p{
+font-weight:400;
+font-size:12px;
+margin-bottom:15px;
+color:black;
+}
+.mtn>a{
+text-decoration:none;
+color:white;
+background:#32537b;
+padding:8px 25px;
+border-radius:25px;
+}
+
+.airtime>img,.data>img,.electricity>img,
+.exam>img,.cable>img{
+height:80px;
+width:80px;
+margin-top:20px;
+border-radius:50px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+.mtn>img{
+height:80px;
+width:80px;
+border-radius:8px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.question{
+background:#32527b;
+height:180px;
+width:100%;
+margin-bottom:50px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+text-align:center;
+margin-top:80px;
+}
+
+.question>h{
+color:white;
+line-height:2;
+font-size:20px;
+font-weight:800;
+}
+.question >p{
+color:white;
+margin-bottom:30px;}
+.question >a{
+text-decoration:none;
+background:white;
+color:black;
+padding:15px 30px;
+border:6px solid rgba(0,255,0,0.1);
+border-radius:25px;}
+h5{
+text-align:center;
+color:grey;
+font-size:20px;
+font-weight:600;
+font-size:15px;
+margin-bottom:30px;}
+.quick,.link,.contact{
+margin-left:20px;
+margin-bottom:40px;}
+.quick>a,.link>a{
+display:flex;
+color:grey;
+text-decoration:none;
+font-size:15px;
+line-height:2;}
+.quick>h,.link>h,.contact>h{
+line-height:2;
+font-weight:800;
+}
+.fa-envelope,.fa-phone,.fa-map-marker{
+color:grey;
+display:flex;
+line-height:2;
+font-size:15px;
+}
+.contact>i{
+cursor:pointer;
+}
+.reserve{
+background:#32527b;
+height:100px;
+width:100%;
+text-align:center;
+color:grey;}
+.reserve>h{
+line-height:3;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<a href="indexdashboard.html" >
+<i class="bx bx-menu sidebarBtn"></i></a>
+<h1>GENTLESAGE<br>TELECOM</h1>
+<nav>
+<a href="indexcontinue.html" >
+<i class="bx bx-user-plus"></i></a><br>
+<a href="indexlogin.html" >
+<i class="bx bx-log-in"></i></a>
+</nav></div>
+<div class="welcome">
+<h1>Welcome To GentleSage TeleCom.</h1>
+<h5>Recharge & Utility Bills Payment Platform.</h5>
+<p>Automated and Instant Delivery; GOtv,DStv,Startimes,<br>PHED,WEAC,MTN,GLO,Airtel, etc.</p>
+<a href="indexcontinue.html" >SIGN IN</a>
+<a href="indexlogin.html" >SIGN UP</a></div>
+<div class="logo">
+<div class="logo-content">
+<h>Sign Up</h>
+<i class="bx bx-user-plus"></i>
+<span class="text"> Create A Free Online Account <br>With Us And Get An Online<br> Wallet.</span>
+</div>
+<div class="logo-content">
+<h>Fund Wallet</h>
+<i class="bx bx-credit-card-alt"></i>
+<span class="text">Fund Your Wallet Using ATM Card,Cash Deposit,Online <br>Transfer.</span>
+</div>
+<div class="logo-content">
+
+<h>Enjoy Services</h>
+<i class="bx bx-cycling"></i>
+<span class="text">
+Enjoy Our Services Charged<br> From Your Wallet.</span></div>
+</div>
+<div class="Why">
+<h3>Why Choose Us</h3>
+<div class="automated" >
+<i class="bx bx-band-aid"></i><br>
+<h>Automated Delivery</h>
+<p>We have swift automated system<br> with
+a 24/7 delivery service almost<br> instantly
+,nothing beats a seamless <br>process...</p>
+</div>
+<div class="discount" >
+ <i class="bx bx-git-merge"></i> 
+<p>Enjoy massive discount on our platform<br> when you make
+ purchase for your<br> day to day needs.</p>
+ </div>
+ <div class="support">
+ <i class="bx bx-support"></i><br>
+ <h>24/7 Support</h>
+ <p>We guarantee our customers 
+ top-notch services all time.
+ Hence,we are always respond to your needs.</p>
+ </div></div>
+ <div class="service">
+ <h>Our Services</h>
+ <p>Automated Instant Delivery.</p>
+ <div class="airtime">
+ <img src="power.jpg"> <br>
+ <h>MTN, GLO, 9mobile & Airtel.</h><br>
+ <a href="indexlogin.html" >Airtime Recharge</a></div>
+ <div class="data" >
+ <img src="data.jpg"><br>
+ <h>MTN, 9mobile, GLO & Airtel.</h><br>
+<a href="indexlogin.html" >Data Recharge</a></div>
+ <div class="cable">
+ <img src="tv.jpg"><br>
+ <h>Startimes, GOtv & DStv.</h><br>
+ <a href="indexlogin.html" >Cable Tv Subscription</a>
+ </div>
+ <div class="electricity">
+ <img src="power.jpg"><br>
+ <h>IKEDC, AEDC, PHEDC ,Etc.</h><br>
+ <a href="indexlogin.html" >Electricity Bill Payment</a>
+ </div>
+ <div class="exam" >
+ <img src="weac.jpg"><br>
+ <h>NABTEB, WEAC, NECO, JAMB ,Etc.</h><br>
+ <a href="indexlogin.html" >Exam Pin</a></div></div>
+ <div class="price">
+ <h>Our Pricing Plan</h>
+ <p>The plan a user subscribe to determines
+ the amount of discount the user will get
+ from our service.</p>
+ <div class="mtn">
+ <h>MTN</h><br>
+ <img src="mtn.png">
+ <h3>₦219</h3>
+ <p>One Month Valid<br>Support 4G Lite<br>
+ Hotspot Sharing<br>Laptop Usage.</p>
+ <a href="indexlogin.html" >Shop Now</a></div>
+ <div class="mtn">
+ <h>GLO</h><br>
+ <img src="glo.jpg">
+ <h3>₦240</h3>
+ <p>One Month Valid<br>Support 4G Lite<br>
+ Hotspot Sharing<br>Laptop Usage.</p>
+ <a href="indexlogin.html" >Shop Now</a></div>
+ <div class="mtn">
+ <h>AIRTEL</h><br>
+ <img src="airtel.jpg">
+ <h3>₦230</h3>
+ <p>One Month Valid<br>Support 4G Lite<br>
+ Hotspot Sharing<br>Laptop Usage.</p>
+ <a href="indexlogin.html" >Shop Now</a></div>
+<div class="mtn">
+ <h>9mobile</h><br>
+ <img src="9mobile.jpg">
+ <h3>₦200</h3>
+ <p>One Month Valid<br>Support 4G Lite<br>
+ Hotspot Sharing<br>Laptop Usage.</p>
+ <a href="indexlogin.html" >Shop Now</a></div></div>
+ <div class="question" >
+ <h>Do You Have Questions ?.</h>
+ <p>We'll help you to grow your career and growth.</p>
+ <a href="indexlogin.html" >Contact Us Today</a></div>
+ <h5>GentleSage TeleCom is a private limited liability company.
+ We are the Best Recharge & Utility Bills
+ Payment Platform.</h5>
+ <div class="quick">
+ <h>QUICK LINK</h>
+ <a href="indexgentlesage.html" >Home</a>
+ <a href="" >About</a>
+ <a href="" >Privacy Policy</a>
+ <a href="indexcontinue.html" >Register</a>
+ <a href="indexlogin.html" >Log In</a></div>
+ 
+ <div class="link">
+ <h>SERVICES</h>
+ 
+ <a href="indexlogin.html" >Airtime Recharge</a>
+ <a href="indexlogin.html" >Data Recharge</a>
+ <a href="indexlogin.html" >Cable Tv Subscription</a>
+ <a href="indexlogin.html" >Exam Pin Checker</a>
+ <a href="indexlogin.html" >Electricity Bill</a></div>
+ <div class="contact">
+ <h>CONTACT</h>
+ <i class="fa fa-map-marker">Nsukka,Enugu State.</i>
+ <i class="fa fa-phone">09079645073.</i>
+ <i class="fa fa-envelope">gentlesage20@gmail.com.</i></div>
+ 
+ <div class="reserve" >
+ <h>© 2023 GentleSage Telecom.</h>
+ <p>Developed BY ELITE TECHNOLOGIES.</p>
+ </div>
+ 
+</body>
+</html></DOCTYPE>

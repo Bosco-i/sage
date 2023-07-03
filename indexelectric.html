@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport"
+content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https:
+//cdnjs.cloudflare.com/ajax/libs
+/font-awesome/4.7.0/css/font-
+awesome.min.css">
+<title>contact</title>
+
+<style type="text/css">
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;}
+
+body{
+background:rgba(0,0,255,0.1);
+height:;}
+
+.home{
+background:rgba(255,255,255,0.5);
+width:100%;
+height:50px;
+display:flex;
+color:black;
+justify-content:space-around;
+align-items:center;
+position:fixed;
+top:0px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+
+.home>a{
+font-size:30px;
+color:black;
+}
+.home>.fa-moon-o icon,.fa-bell{
+font-size:15px;
+cursor:pointer;}
+.message{
+background:white;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+border-radius:8px;
+width:280px;
+height:180vh;
+margin-bottom:80px;
+margin-left:20px;
+position:static;
+margin-top:80px;
+
+}
+
+
+.message>h4{
+line-height:;
+text-align:center;
+padding-top:20px;
+font-size:20px;
+margin-bottom:20px;}
+
+.text{
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:grey;
+margin-bottom:5px;
+padding:0px 12px;}
+
+.input-field {
+  width: 200px;
+  padding: 10px;
+  outline: none;
+  border:transparent;
+  border:1px solid grey;
+  margin-left:30px;
+margin-bottom:10px;
+border-radius:8px;
+}
+
+.pictures>img{
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+height:60px;
+width:60px;
+justify-content:space-between;
+margin-left:20px;
+margin-bottom:20px;
+border:1px solid white;
+}
+hr{
+margin-bottom:20px;
+}
+
+.body > select {
+   height:40px ;
+   width:200px;
+   color:grey;
+   background:white;
+   padding: 0px 0px;
+   margin-left:30px;
+   border-radius:8px;
+   outline:none;
+   margin-bottom:10px;
+}
+
+.button{
+text-align:center;
+margin-left:40px;
+padding:10px 70px;
+outline:none;
+border:transparent;
+border-radius:25px;
+background:dodgerblue;
+color:white;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+margin-top:20px;
+}
+div.fixed{
+background:rgba(255,255,255,0.6);
+width:100%;
+height:50px;
+display:flex;
+color:black;
+position:fixed;
+bottom:0px;
+justify-content:space-around;
+align-items:center;
+}
+
+.fixed>a{
+color:black;
+}
+.fixed>a>i>p{
+font-size:12px;
+}
+.fixed>a>.fa-phone,.fa-wifi{
+font-size:15px;
+cursor:pointer;}
+
+.fixed>a>.fa-whatsapp{
+font-size:30px;
+color:white;
+background:#57C84D;
+border-radius:50px;
+padding:4px 8px;}
+
+strong{
+color:red;
+font-size:12px;
+margin-bottom:10px;
+
+}
+.message>p{
+text-align:center;
+padding-top:15px;
+font-size:12px;
+color:dodgerblue;
+}
+</style>
+</head>
+<body>
+<div class="home">
+<a href="indexfirstpage.html" ><i class="fa fa-angle-left"></i></a>
+<h>GentleSage Telecom</h>
+<i class="fa fa-moon-o icon"></i>
+<i class="fa fa-bell icon"></i>
+</div>
+<div class="message" >
+<p>Electricity Payment</p>
+<h4>Electricity Bill</h4>
+<div class="pictures">
+<img src="aedc.png" >
+<img src="ph.jpg" >
+<img src="eedc.png" >
+<img src="jos.jpg" >
+<img src="kaduna.jpg">
+<img src="ie.jpg" ></div>
+<hr>
+<form action="/action_page.php">
+<div class="text" >
+<h>Provider:</h>
+</div>
+<div class="body">
+
+<select name="select">
+<option value="Select Provider">Select Provider</option>
+<option value="Abuja Electric">Abuja Electric</option>
+<option value="Benin Electric"> Benin Electric</option>
+<option value="Eko Electric">Eko Electric</option>
+<option value="Enugu Electric">Enugu Electric</option>
+<option value="Ibadan Electric">Ibadan Electric</option>
+<option value="Ikeja Electric">Ikeja Electric</option>
+<option value="Jos Electric">Jos Electric</option>
+<option value="Kaduna Electric">Kaduna Electric</option>
+<option value="Kano Electric">Kano Electric</option>
+<option value="Port Harcourt Electric">Port Harcourt Electric</option>
+<option value="Yola Electric">Yola Electric</option>
+</select></div>
+
+<div class="text" >
+<h>Meter Type:</h>
+</div>
+<div class="body">
+<select name="select">
+<option value="Select Type">Select Type</option>
+<option value="Prepaid">Prepaid</option>
+<option value="Postpaid">Postpaid</option>
+</select></div>
+
+
+<div class="text" >
+
+<h>Customer Phone Number:</h></div>
+<input class="input-field" type="text" placeholder="phone number" name="phone number" required="required"  >
+
+<div class="text" >
+<h>Meter Number:</h></div>
+<input class="input-field" type="text" placeholder="meter type" name="meter type" required="required"  >
+
+<div class="text" >
+<h>Amount:</h></div>
+<input class="input-field" type="text" placeholder="amount" name="amount" required="required"  >
+
+<div class="text" >
+<h>Amount To Pay:</h></div>
+<input class="input-field" type="text" placeholder="amount to pay" name="amount to pay" required="required"  >
+<div class="text" >
+<strong>Note:Transactions attract a service <br>charges of #100 only.<br>
+Note:Minimum Unit Purchase is #1000.</strong>
+</div>
+<button class="button" type="summit">Continue</button></form></div>
+
+
+<div class="fixed">
+<a href="indexairtime.html" >
+<i class="fa fa-phone" ><p>Airtime</p>
+</i></a>
+<a href="indexdata.html" >
+<i class="fa fa-wifi" ><p>Data</p>
+</i></a></i>
+<a href="https://wa.me/2349079645073" >
+<i class="fa fa-whatsapp" >
+</i></a>
+</div>
+</body></html>
